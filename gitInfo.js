@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = "Git is a version control system on your computer for making snapshots throughout a code's lifetime";
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = "GitHub is a version control system on the web for making snapshots throughout a code's lifetime.";
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +28,7 @@
 */
 
 //CODE HERE
+let gitInitDefinition = "'git init' initializes a local git repository in the directory you are located.";
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,6 +37,7 @@
 */
 
 //CODE HERE
+let gitCloneDefinition = "'git clone' creates a clone or copy of the targeted repository.";
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -42,6 +46,7 @@
 */
 
 //CODE HERE
+let gitStatusDefinition = "'git status' gives information (the status) of the repository you are located in.";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +58,8 @@
 */
 
 //CODE HERE
+let gitAddDefinition = "'git add' adds files to be tracked in the repository";
+let gitAddCode = "git .";
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -64,7 +71,8 @@
 */
 
 //CODE HERE
-
+let gitCommitDefinition = "'git commit' creates a snapshot of the files being tracked";
+let gitCommitCode = "git commit -m 'initial commit'";
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +81,4 @@
 */
 
 //CODE HERE
+let gitPushDefinition = "'git push' pushes a local repository in Git into a remote repository on GitHub.";
