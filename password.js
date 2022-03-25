@@ -36,26 +36,52 @@ reader.question("Please Enter Password: ", function(input){
     }
 
     if (bLength && bNumber && bSpecial && bCapLetter && bLowLetter){
-        console.log("Congratulations! Password validated successfully!");
+        console.log(`  
+   
+ _______           _______  _______  _______  _______  _______ 
+ (  ____ \\|\\     /|(  ____ \\(  ____ \\(  ____ \\(  ____ \\(  ____ \\
+ | (    \\/| )   ( || (    \\/| (    \\/| (    \\/| (    \\/| (    \\/
+ | (_____ | |   | || |      | |      | (__    | (_____ | (_____ 
+ (_____  )| |   | || |      | |      |  __)   (_____  )(_____  )
+       ) || |   | || |      | |      | (            ) |      ) |
+ /\\____) || (___) || (____/\\| (____/\\| (____/\\/\\____) |/\\____) |
+ \\_______)(_______)(_______/(_______/(_______/\\_______)\\_______)
+                                                                
+ Congratulations! Password validated successfully!
+ `);
     } else {
-        console.log("Sorry the password could not be validated. \nErrors:");
+        console.log(`
+        
+ _                                  _       
+ | |_ _ __ _   _    __ _  __ _  __ _(_)_ __  
+ | __| '__| | | |  / _\` |/ _\` |/ _\` | | '_ \\ 
+ | |_| |  | |_| | | (_| | (_| | (_| | | | | |
+  \\__|_|   \\__, |  \\__,_|\\__, |\\__,_|_|_| |_|
+           |___/         |___/               
+ 
+Sorry the password could not be validated.
+|------------------------------------------------------------|
+   Errors:`);
         if(!bLength){
-            console.log("Password is not at least 10 characters.");
+            console.log("   -Password is not at least 10 characters.");
         }
         if(!bCapLetter){
-            console.log("Does not contain at least 1 upper case letter.");
+            console.log("   -Does not contain at least 1 upper case letter.");
         }
         if(!bLowLetter){
-            console.log("Does not contain at least 1 lower case letter.");
+            console.log("   -Does not contain at least 1 lower case letter.");
         }
         if(!bNumber){
-            console.log("Does not contain at least 1 number.");
+            console.log("   -Does not contain at least 1 number.");
         }
         if(!bSpecial){
-            console.log("Does not contain at least 1 special character *!@+#;:")
+            console.log("   -Does not contain at least 1 special character *!@+#;:")
         }
+        console.log(`|------------------------------------------------------------|
+        
+        
+        `);
     }
-
     // if(password.length > 9){
     //     console.log("Congratulations! Password validated successfully!");
     // } else {
