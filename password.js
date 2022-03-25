@@ -33,12 +33,13 @@ reader.question("Please Enter Password: ", function(input){
         } else if (password[i] === password[i].toLowerCase()) {
             bLowLetter = true;
         }
+        //note: another way to do this is to check for character codes and determine if char is between those numbers
     }
 
     if (bLength && bNumber && bSpecial && bCapLetter && bLowLetter){
         console.log(`  
    
- _______           _______  _______  _______  _______  _______ 
+  _______           _______  _______  _______  _______  _______ 
  (  ____ \\|\\     /|(  ____ \\(  ____ \\(  ____ \\(  ____ \\(  ____ \\
  | (    \\/| )   ( || (    \\/| (    \\/| (    \\/| (    \\/| (    \\/
  | (_____ | |   | || |      | |      | (__    | (_____ | (_____ 
@@ -52,7 +53,7 @@ reader.question("Please Enter Password: ", function(input){
     } else {
         console.log(`
         
- _                                  _       
+  _                                  _       
  | |_ _ __ _   _    __ _  __ _  __ _(_)_ __  
  | __| '__| | | |  / _\` |/ _\` |/ _\` | | '_ \\ 
  | |_| |  | |_| | | (_| | (_| | (_| | | | | |
